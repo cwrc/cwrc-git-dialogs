@@ -37,7 +37,7 @@ const CreateRepoModal = ({ cancel, complete, owner, ownerType, repo }) => {
 
 		if (ownerType === 'User') {
 			newRepo = await cwrcGit
-				.createRepo({ repo, repoDesc, isPrivate })
+				.createRepo({ owner, repo, repoDesc, isPrivate })
 				.catch((error) => displayError(error));
 		} else if (ownerType === 'Organization') {
 			newRepo = await cwrcGit

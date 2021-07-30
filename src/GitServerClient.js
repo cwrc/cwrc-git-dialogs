@@ -42,13 +42,13 @@ const getMembershipForUser = async ({ owner, username }) => {
 	return await callCWRCGitWithToken(`${baseUrl}/orgs/${owner}/memberships/${username}`);
 };
 
-const createRepo = async ({ repo, description, isPrivate }) => {
+const createRepo = async ({ owner, repo, description, isPrivate }) => {
 	let url = `${baseUrl}/user/repos`;
 	if (isGitLab) url = `${baseUrl}/projects?name=${repo}`;
 
 	return await callCWRCGitWithToken(url, {
 		method: 'POST',
-		body: JSON.stringify({ repo, isPrivate, description }),
+		body: JSON.stringify({ owner, repo, isPrivate, description }),
 	});
 };
 
