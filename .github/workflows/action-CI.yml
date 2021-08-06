@@ -3,7 +3,7 @@ name: CI (test and release)
 ## Controls when the workflow will run
 on:
   push:
-    branches: [master, development]
+    branches: [master, development, next]
   pull_request:
     branches: [master]
 
