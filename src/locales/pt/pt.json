@@ -1,80 +1,80 @@
 {
-	"common": {
-		"ok": "Ok",
-		"cancel": "Cancelar",
-		"anErrorOccurred": "Ocorreu um erro",
-		"save": "Salvar",
-		"saveAsPullRequest": "Salvar como Pull Request",
-		"create": "Criar",
-		"forkSaveAsPullRequest": "Fork and Pull Request",
-		"yes": "Sim"
-	},
-	"load": {
-		"header": "Carregar Documento"
-	},
-	"save": {
-		"header": "Salvar no repositório",
-		"saveForm": {
-			"heading": "Endereço do repositório",
-			"owner": {
-				"label": "Usuário/Organização GitHub"
-			},
-			"repo": {
-				"label": "Nome do repositório"
-			},
-			"path": {
-				"label": "Endereço do arquivo",
-				"helpText": "O arquivo (e pasta) onde salvar. (<italic>ex:</italic>, portugues/brasil/machadoDeAssis.xml)."
-			}
-		},
-		"createRepoForm": {
-			"heading": "Criar repositório",
-			"wouldYouLikeToCreate": "Esse repositório não existe, deseja cria-lo?",
-			"repo": {
-				"label": "Repositório"
-			},
-			"description": {
-				"label": "Descrição",
-				"placeholder": "Uma breve descrição para seu repositório.",
-				"defaultValue": "Criado pelo CWRC",
-				"helpText": "A descrição do repositório vai aparecer na página do GitHub."
-			},
-			"makePrivate": "Privado"
-		},
-		"forkRepoForm": {
-			"heading": "Fork e Pull Request",
-			"hasPermission": "Você tem permissão para criar um Pull Request nesse repositórtio, mas ele pertence a outro usuário. Se quiser obter uma cópia do conteudo desse repositório, faça um Fork e crie um Pull Request com suas mudanças para o repositório Original.",
-			"noPermission": "Você não tem permissão para usar esse repositório: \"{{repo}}\". Tente salvar em outro repositório, ou faça um for e crie um Pull Request."
-		},
-		"status": {
-			"checkingPermissions": "Checando permissões...",
-			"creatingNewRepo": "Criando repositório...",
-			"forkingRepo": "Forking repositório...",
-			"checkingFile": "Checando o arquivo...",
-			"savingFile": "Salvando o arquivo..."
-		},
-		"fileForm": {
-			"createFile": {
-				"heading": "Ciar Arquivo",
-				"body": "Esse arquivo não existe. Deseja cria-lo?"
-			},
-			"overwrite": {
-				"heading": "Arquivo Existente",
-				"body": "Esse arquivo já existe. Gostaria de sobreescreve-lo?"
-			}
-		},
-		"saved": {
-			"heading": "Documento Salvo",
-			"body": "Seu documento foi salvo."
-		},
-		"error": {
-			"repoNoPermission": "Você não tem permissão para usar o repositório selecionado.",
-			"repoNotExist": "O repositório <strong>{{repo}}</strong> que você esta tentando salvar o arquivo não existe.",
-			"repoNotExistForPR": "O repositório que você esta tentando fazer o Pull Request não existe",
-			"notAuthorizeCreateForOtherUser": "Você não pode criar repositórios para outros usuários.",
-			"notOrgMemberCreate": "Você deve ser membro da organização <strong>{{owner}}</strong> para criar um reposítorio em nome deles.",
-			"ownerNotExist": "O dono ({{owner}}) desse repositório não existe.",
-			"noBlankFields": "Os campos do formulário não pode estar vazio."
-		}
-	}
+  "common": {
+    "ok": "Ok",
+    "cancel": "Cancelar",
+    "anErrorOccurred": "Ocorreu um erro",
+    "save": "Salvar",
+    "saveAsPullRequest": "Salvar como Pull Request",
+    "create": "Criar",
+    "forkSaveAsPullRequest": "Fork and Pull Request",
+    "yes": "Sim"
+  },
+  "load": {
+    "header": "Carregar Documento"
+  },
+  "save": {
+    "header": "Salvar no repositório",
+    "saveForm": {
+      "heading": "Endereço do repositório",
+      "owner": {
+        "label": "Usuário/Organização GitHub"
+      },
+      "repo": {
+        "label": "Nome do repositório"
+      },
+      "path": {
+        "label": "Endereço do arquivo",
+        "helpText": "O arquivo (e pasta) onde salvar. (<italic>ex:</italic>, portugues/brasil/machadoDeAssis.xml)."
+      }
+    },
+    "createRepoForm": {
+      "heading": "Criar repositório",
+      "wouldYouLikeToCreate": "Esse repositório não existe, deseja cria-lo?",
+      "repo": {
+        "label": "Repositório"
+      },
+      "description": {
+        "label": "Descrição",
+        "placeholder": "Uma breve descrição para seu repositório.",
+        "defaultValue": "Criado pelo CWRC",
+        "helpText": "A descrição do repositório vai aparecer na página do GitHub."
+      },
+      "makePrivate": "Privado"
+    },
+    "forkRepoForm": {
+      "heading": "Fork e Pull Request",
+      "hasPermission": "Você tem permissão para criar um Pull Request nesse repositórtio, mas ele pertence a outro usuário. Se quiser obter uma cópia do conteudo desse repositório, faça um Fork e crie um Pull Request com suas mudanças para o repositório Original.",
+      "noPermission": "Você não tem permissão para usar esse repositório: \"{{repo}}\". Tente salvar em outro repositório, ou faça um for e crie um Pull Request."
+    },
+    "status": {
+      "checkingPermissions": "Checando permissões...",
+      "creatingNewRepo": "Criando repositório...",
+      "forkingRepo": "Forking repositório...",
+      "checkingFile": "Checando o arquivo...",
+      "savingFile": "Salvando o arquivo..."
+    },
+    "fileForm": {
+      "createFile": {
+        "heading": "Ciar Arquivo",
+        "body": "Esse arquivo não existe. Deseja cria-lo?"
+      },
+      "overwrite": {
+        "heading": "Arquivo Existente",
+        "body": "Esse arquivo já existe. Gostaria de sobreescreve-lo?"
+      }
+    },
+    "saved": {
+      "heading": "Documento Salvo",
+      "body": "Seu documento foi salvo."
+    },
+    "error": {
+      "repoNoPermission": "Você não tem permissão para usar o repositório selecionado.",
+      "repoNotExist": "O repositório <strong>{{repo}}</strong> que você esta tentando salvar o arquivo não existe.",
+      "repoNotExistForPR": "O repositório que você esta tentando fazer o Pull Request não existe",
+      "notAuthorizeCreateForOtherUser": "Você não pode criar repositórios para outros usuários.",
+      "notOrgMemberCreate": "Você deve ser membro da organização <strong>{{owner}}</strong> para criar um reposítorio em nome deles.",
+      "ownerNotExist": "O dono ({{owner}}) desse repositório não existe.",
+      "noBlankFields": "Os campos do formulário não pode estar vazio."
+    }
+  }
 }

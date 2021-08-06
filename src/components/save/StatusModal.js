@@ -4,20 +4,20 @@ import { Modal } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 const StatusModal = ({ status }) => {
-	const { t } = useTranslation(['save']);
+  const { t } = useTranslation(['save']);
 
-	return (
-		<Fragment>
-			<Modal.Header>{t('save:header')}</Modal.Header>
-			<Modal.Body>
-				<p>{status}</p>
-			</Modal.Body>
-		</Fragment>
-	);
+  return (
+    <Fragment>
+      <Modal.Header>{t('save:header')}</Modal.Header>
+      <Modal.Body>
+        <p>{status}</p>
+      </Modal.Body>
+    </Fragment>
+  );
 };
 
 StatusModal.propTypes = {
-	status: PropTypes.string,
+  status: PropTypes.string,
 };
 
 export default StatusModal;

@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import $ from 'jquery';
 import dialogs from '../src/index.js';
 
@@ -30,24 +34,24 @@ const sampleDoc = `
 
 let idCount = 0;
 const writerMock = {
-	getUniqueId: (prefix) => {
-		let id = prefix + idCount;
-		idCount++;
-		return id;
-	},
-	dialogManager: {
-		getDialogWrapper: () => $(document.body),
-	},
-	isDocLoaded: () => false,
-	getDocument: () => sampleDoc,
-	setDocument: () => {},
-	event: () => ({
-		publish: () => {},
-	}),
+  getUniqueId: (prefix) => {
+    let id = prefix + idCount;
+    idCount++;
+    return id;
+  },
+  dialogManager: {
+    getDialogWrapper: () => $(document.body),
+  },
+  isDocLoaded: () => false,
+  getDocument: () => sampleDoc,
+  setDocument: () => {},
+  event: () => ({
+    publish: () => {},
+  }),
 };
 
 test('show splash', () => {
-	expect.assertions(1);
-	dialogs.load(writerMock);
-	expect($('#git-dialogs-0 h1').text().indexOf('Welcome to CWRC-Writer')).toBeGreaterThan(-1);
+  expect.assertions(1);
+  dialogs.load(writerMock);
+  expect($('#git-dialogs-0 h1').text().indexOf('Welcome to CWRC-Writer')).toBeGreaterThan(-1);
 });
